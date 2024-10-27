@@ -46,10 +46,8 @@ export default function RootLayout({
                 backgroundPosition: "center",
               }}
             />
-            <div
-              className="absolute inset-0 bg-zinc-200 bg-opacity-20" // Camada de sobreposição
-            />
-            <div className="grid grid-rows-[1fr_200px] h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] relative z-10 justify-items-center">
+            <div className="absolute inset-0 bg-zinc-200 bg-opacity-20" />
+            <div className="flex flex-col h-full pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)] relative z-10 justify-center items-center">
               {children}
             </div>
           </div>
@@ -58,12 +56,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-{
-  /* <div className="grid grid-rows-[1fr_200px] h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] relative z-10 justify-items-center">
-<main className="flex flex-col w-[60%] justify-center items-center sm:items-start">
-  {children}
-</main>
-</div> */
 }

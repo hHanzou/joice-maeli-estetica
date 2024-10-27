@@ -9,6 +9,50 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  type ServicesPropType = {
+    key: number;
+    name: string;
+    path: string;
+  };
+
+  const Services: ServicesPropType[] = [
+    {
+      key: 1,
+      name: "Rotina de Skincare",
+      path: "procedimentos/skincare",
+    },
+    {
+      key: 2,
+      name: "Revitalização Facial",
+      path: "procedimentos/revitalizacao-facial",
+    },
+    {
+      key: 3,
+      name: "Limpeza de Pele",
+      path: "procedimentos/limpeza-de-pele",
+    },
+    {
+      key: 4,
+      name: "Massagem Relaxante",
+      path: "procedimentos/massagem-relaxante",
+    },
+    {
+      key: 5,
+      name: "Drenagem Linfática",
+      path: "procedimentos/drenagem-linfatica",
+    },
+    {
+      key: 6,
+      name: "Ventosaterapia",
+      path: "procedimentos/ventosaterapia",
+    },
+    {
+      key: 7,
+      name: "Massagem Modeladora",
+      path: "procedimentos/massagem-modeladora",
+    },
+  ];
+
   useEffect(() => {
     // Função para fechar o menu se o clique for fora do dropdown
     const handleClickOutside = (event: MouseEvent) => {
@@ -61,17 +105,17 @@ const Header = () => {
           style={{ color: "white" }}
         >
           <a href="/" className="block p-2 hover:bg-ptlorange">
-            Home
+            Início
           </a>
-          <a href="/about" className="block p-2 hover:bg-ptlorange">
-            Sobre
-          </a>
-          <a href="/services" className="block p-2 hover:bg-ptlorange">
-            Serviços
-          </a>
-          <a href="/contact" className="block p-2 hover:bg-ptlorange">
-            Contato
-          </a>
+          {Services.map((service) => (
+            <a
+              href={service.path}
+              key={service.key}
+              className="block p-2 hover:bg-ptlorange"
+            >
+              {service.name}
+            </a>
+          ))}
         </div>
       )}
     </header>
