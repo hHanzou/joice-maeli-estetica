@@ -11,6 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        pbase: "var(--pallete-base)",
+        pdark: "var(--pallete-dark)",
+        porange: "var(--pallete-orange)",
+        plorange: "var(--pallete-lorange)",
+        ptlorange: "var(--pallete-t-base)",
+        pdorange: "var(--pallete-dorange)",
+      },
+      fontFamily: {
+        "dancing-script": ["Dancing Script", "cursive"],
       },
     },
   },

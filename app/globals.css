@@ -5,11 +5,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* paleta de cores */
+
+  --pallete-base: #ffe8d6;
+  --pallete-dark: #3c3733;
+  --pallete-orange: #8d6a58;
+  --pallete-light-orange: #a38f81;
+  --pallete-dark-orange: #877462;
+
+  --pallete-t-base: #eed3be49;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #a18b82;
     --foreground: #ededed;
   }
 }
