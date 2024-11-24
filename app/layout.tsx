@@ -35,22 +35,27 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col min-h-screen">
+          {/* Header Responsivo */}
           <Header />
+
+          {/* Área Principal */}
           <div className="flex-grow relative">
+            {/* Fundo Responsivo */}
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/images/texture.jpg')",
-                opacity: 0.7,
-                backgroundSize: "cover",
+                opacity: 0.4,
+                backgroundImage: "url('/images/wallpaper.png')",
                 backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-zinc-200 bg-opacity-20" />
-            <div className="flex flex-col h-full pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)] relative z-10 justify-center items-center">
+            {/* Conteúdo Principal */}
+            <div className="flex flex-col h-full mt-6 sm:mt-4 relative z-10 px-4 sm:px-8 lg:px-12">
               {children}
             </div>
           </div>
+
+          {/* Footer Responsivo */}
           <Footer />
         </div>
       </body>

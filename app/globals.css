@@ -15,11 +15,13 @@
   --pallete-dark-orange: #877462;
 
   --pallete-t-base: #eed3be49;
+
+  --teste: #efd6c1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #a18b82;
+    --background: #ebc2a4;
     --foreground: #ededed;
   }
 }

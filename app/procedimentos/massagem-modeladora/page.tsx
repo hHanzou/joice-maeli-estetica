@@ -1,5 +1,12 @@
-const massModeladoraPage = () => {
-  return <h1>ddadipoudoawdohuawdhiouawuhdihauidhuaspdajp</h1>;
+import ProcedimentoContainer from "@/app/components/ProcedimentoContainer";
+
+const MassModeladoraPage = () => {
+  return (
+    <ProcedimentoContainer
+      exProcedimentoPath="/images/ex-massagem-modeladora.png"
+      procedimentoPath="/images/massagem-modeladora.png"
+    />
+  );
 };
 
-export default massModeladoraPage;
+export default MassModeladoraPage;

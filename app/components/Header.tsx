@@ -90,6 +90,7 @@ const Header = () => {
             alt="joicemaelilogo"
             width={200}
             height={200}
+            className="border border-pbase p-4"
           />
         </a>
       </div>
@@ -109,7 +110,7 @@ const Header = () => {
           </a>
           {Services.map((service) => (
             <a
-              href={service.path}
+              href={"/" + service.path}
               key={service.key}
               className="block p-2 hover:bg-ptlorange"
             >
